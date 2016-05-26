@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tradutorcodbinario.MainActivity" >
+
+    <EditText
+        android:id="@+id/frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:text="texto" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/frase"
+        android:layout_alignRight="@+id/frase"
+        android:layout_below="@+id/frase"
+        android:layout_marginTop="40dp"
+        android:text="Codificar" />
+
+    <Button
+        android:id="@+id/btnDecode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCode"
+        android:layout_alignRight="@+id/btnCode"
+        android:layout_below="@+id/btnCode"
+        android:layout_marginTop="14dp"
+        android:text="Decodificar" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDecode"
+        android:layout_alignRight="@+id/btnDecode"
+        android:layout_below="@+id/btnDecode"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:text="codigo binario" />
+
+</RelativeLayout>
